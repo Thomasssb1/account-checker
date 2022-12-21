@@ -11,22 +11,34 @@ body{
     width: 300px;
     border-radius: 10px;
     margin-bottom: 78px;
+    user-select: none;
 }
 
-#text-1{
+.text{
     font-family: Inter;
-    color: #434141;
+    color: #FFFFFF;
     font-size: 40px;
     text-align: center;
 }
 
-#email-username{
-    background-color: #000000;
-    border-radius: 64px;
-    width: 845px;
-    height: 75px;
+#input-div{
     margin: auto;
     display: block;
+    width: 955px;
+}
+
+#email-username{
+    background-color: #000000;
+    border-radius: 64px 0px 0px 64px;
+    width: 845px;
+    height: 75px;
+    position: absolute;
+    border: 0;
+    outline: none;
+    color: #FFFFFF;
+    padding: 0px 20px;
+    font-size: 20px;
+    font-family: Inter;
 }
 
 #submit-email-username{
@@ -34,8 +46,62 @@ body{
     width: 145px;
     height: 75px;
     background-color: #ff160a;
-    border-radius: 64px;
+    border-radius: 64px 0px 64px 64px;
     font-family: Inter;
     color: #FFFFFF;
     font-size: 32px;
+    position: relative;
+    float: right;
+    border: 0;
+}
+
+#div-bottom{
+    background-color: #383737;
+    height: 250px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+}
+
+#div-even-text{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#div-line{
+    width: 95%;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+#div-info{
+    display: flex;
+    justify-content: center;
+}
+
+#div-learn-more{
+    font-size: 20px;
+    width: 650px;
+    white-space: pre-wrap;
+    padding-right: 10px;
+    font-family: Inter;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+#button-learn-more{
+    background-color: #680704;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: 0;
+    font-family: Inter;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
 }

@@ -4,12 +4,37 @@
     <link rel="icon" type="image/png" href="assets/rdshklogo.png">
 </head>
 <body>
-    <img src="assets/rdshckmockup.png" id="title-icon">
-    <h1 id="text-1">Find accounts that are registered under the same name or same email</h1>
-    <div>
+    <img src="assets/rdshckmockup.png" id="title-icon" draggable="false">
+    <h1 class="text" style="color: #434141;">Find accounts that are registered under the same name or same email</h1>
+    <div id="input-div">
         <form>
             <input type="text" id="email-username" name="input-email-username" autocomplete="on" autofocus="autofocus" maxlength="64" required="required">
             <input type="submit" value="Check" id="submit-email-username">
         </form>
+    </div>
+    <h2 class="text" style="color: #787878; padding-top: 95px;">Have you forgot which websites you have signed up to?<br>
+        Want to check where your username has been taken?
+    </h2>
+    <div id="div-bottom">
+        <div id="div-even-text">
+            <div class="text" style="font-size: 20px;">websites registered
+                <br>
+                <span style="font-size: 40px;">999</span>
+            </div>
+            <div class="text" style="font-size: 20px;">users checked
+                <br>
+                <span style="font-size: 40px;">999</span>
+            </div>
+            <div class="text" style="font-size: 20px;">last updated
+                <br>
+                <span style="font-size: 40px;">21/12/22</span>
+            </div>
+        </div>
+        <hr id="div-line">
+        <h1 class="text" style="line-height: 40px; margin: 0; padding-bottom: 10px;">Why should I care?</h1>
+        <div id="div-info">
+            <p id="div-learn-more">When creating new accounts, all of your information is stored on their databases. If you forget or don’t use that account then it is even more prone to be attacked or data leaked in a breach without your knowledge.</p>
+            <button id="button-learn-more">Learn more</button>
+        </div>
     </div>
 </body>
