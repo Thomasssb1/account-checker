@@ -139,3 +139,27 @@ body{
         transform: scale(0.8);
     }
 }
+
+#image-social{
+    width: 175px;
+    height: 175px;
+    margin-right: 10px;
+}
+
+.title-social{
+    font-family: Inter;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+#div-social{
+    display: flex;
+}
+
+#div-social-holder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding-left: 100px;
+    padding-top: 25px;
+}

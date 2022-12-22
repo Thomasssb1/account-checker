@@ -2,19 +2,21 @@
 <head>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/png" href="assets/RDSHKCircle.png">
+    <script src="script.js"></script>
 </head>
 <body>
     <img src="assets/rdshckmockup.png" id="title-icon" draggable="false">
-    <h1 class="text" style="color: #434141;">Find accounts that are registered under the same name or same email</h1>
+    <h1 class="text" style="color: #434141;">Find accounts that are registered under the same name</h1>
     <div id="input-div">
-        <form>
+        <form onsubmit="return false">
             <input type="text" id="email-username" name="input-email-username" autocomplete="on" autofocus="autofocus" maxlength="64" required="required">
-            <input type="submit" value="Check" id="submit-email-username">
+            <input type="submit" value="Check" id="submit-email-username" onclick="checkAccounts()">
         </form>
     </div>
     <h2 class="text" style="color: #787878; padding-top: 95px;">Have you forgot which websites you have signed up to?<br>
         Want to check where your username has been taken?
     </h2>
+    <div id="div-social-holder"></div>
     <div id="div-bottom">
         <div id="div-even-text">
             <div class="text" style="font-size: 20px;">websites registered
